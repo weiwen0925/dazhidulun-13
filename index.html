@@ -433,7 +433,67 @@ img{-webkit-user-drag:none;pointer-events:none;}
   .toc-grid{grid-template-columns:1fr;}
 }
 </style>
-<script id="wy-l1l5-decoder">(function(){var KEY='wy-dzdl-v13-2026';function _xb64decode(s){  try{    var bin=atob(s);    var kb=KEY;    var out=new Array(bin.length);    for(var i=0;i<bin.length;i++){      out[i]=String.fromCharCode(bin.charCodeAt(i)^kb.charCodeAt(i%kb.length));    }    return decodeURIComponent(escape(out.join('')));  }catch(e){ return ''; }}function _decodeL5(){  var nodes=document.querySelectorAll('[data-wy-c]');  for(var i=0;i<nodes.length;i++){    var el=nodes[i];    var enc=el.getAttribute('data-wy-c');    if(!enc) continue;    var dec=_xb64decode(enc);    if(dec){ el.textContent=dec; el.removeAttribute('data-wy-c'); }  }}function _decodeL1(){  var frames=document.querySelectorAll('iframe[data-wy-l1]');  for(var i=0;i<frames.length;i++){    var f=frames[i];    var enc=f.getAttribute('data-wy-l1');    if(!enc) continue;    var dec=_xb64decode(enc);    if(dec){      // dec 仍是 srcdoc-escaped 字串（& 為 &amp; 等）      // 直接 setAttribute('srcdoc', ...) 即可      // 注意：srcdoc 屬性 setter 接受 unescaped HTML，      // 我們存的是已 escape 過的字串；需 unescape 為 raw HTML      var raw=dec.replace(/&amp;/g,'&').replace(/&quot;/g,'"');      f.setAttribute('srcdoc', raw);      f.removeAttribute('data-wy-l1');    }  }}function _run(){ try{_decodeL5();}catch(e){} try{_decodeL1();}catch(e){} }if(window.__wyReady && window.__wyReady.then){  window.__wyReady.then(function(){ _run(); });}else{  if(document.readyState==='loading'){    document.addEventListener('DOMContentLoaded', _run);  }else{ _run(); }}})();</script></head>
+<script id="wy-l1l5-decoder">
+(function(){
+var KEY='wy-dzdl-v13-2026';
+function _xb64decode(s){
+  try{
+    var bin=atob(s);
+    var kb=KEY;
+    var out=new Array(bin.length);
+    for(var i=0;i<bin.length;i++){
+      out[i]=String.fromCharCode(bin.charCodeAt(i)^kb.charCodeAt(i%kb.length));
+    }
+    return decodeURIComponent(escape(out.join('')));
+  }catch(e){ return ''; }
+}
+function _decodeL5(){
+  var nodes=document.querySelectorAll('[data-wy-c]');
+  for(var i=0;i<nodes.length;i++){
+    var el=nodes[i];
+    var enc=el.getAttribute('data-wy-c');
+    if(!enc) continue;
+    var dec=_xb64decode(enc);
+    if(dec){ el.textContent=dec; el.removeAttribute('data-wy-c'); }
+  }
+}
+function _decodeL1(){
+  var frames=document.querySelectorAll('iframe[data-wy-l1]');
+  for(var i=0;i<frames.length;i++){
+    var f=frames[i];
+    var enc=f.getAttribute('data-wy-l1');
+    if(!enc) continue;
+    var dec=_xb64decode(enc);
+    if(dec){
+      var raw=dec.replace(/&amp;/g,'&').replace(/&quot;/g,'"');
+      f.setAttribute('srcdoc', raw);
+      f.removeAttribute('data-wy-l1');
+    }
+  }
+}
+function _run(){
+  try{_decodeL5();}catch(e){}
+  try{_decodeL1();}catch(e){}
+}
+/* Triple fallback: __wyReady, DOMContentLoaded, 2-second timeout */
+var _ran=false;
+function _safeRun(){ if(_ran) return; _ran=true; _run(); }
+if(window.__wyReady && window.__wyReady.then){
+  window.__wyReady.then(function(){ _safeRun(); });
+}
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded', function(){
+    /* DOMContentLoaded only fires after origin check completes (because preguard hid html). */
+    /* But run anyway as a safety net in case __wyReady never resolves. */
+    setTimeout(_safeRun, 100);
+  });
+}else{
+  setTimeout(_safeRun, 100);
+}
+setTimeout(_safeRun, 3000);
+})();
+</script>
+</head>
 <body>
 <a id="top" style="position:absolute;top:0;left:0;width:1px;height:1px;overflow:hidden;"></a>
 <button id="sbToggle" aria-label="開選單">☰</button>
