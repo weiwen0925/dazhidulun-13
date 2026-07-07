@@ -673,4 +673,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C13P3:END-->
+<!--WY-C13P4:BEGIN-->
+<style id="wy-c13p4-css">
+.c13p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c13p4-fabbox.show{display:block;}
+.c13p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c13p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c13p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c13p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c13p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c13p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c13p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c13p4-modal.open{display:flex;}
+.c13p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c13p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c13p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c13p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c13p4-close:hover{background:#e3d5b8;}
+.c13p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c13p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c13p4-tbl th,.c13p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c13p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c13p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c13p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c13p4-tbl b{color:#8b2500;}
+.c13p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c13p4-note b{color:#8b2500;}
+@media(max-width:900px){.c13p4-fabbox{right:14px;}.c13p4-tbl{font-size:11.5px;}.c13p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c13p4-fabbox" id="c13p4Box"><button class="c13p4-btn" id="c13p4Btn" type="button" aria-label="開啟全景總表"><span class="c13p4-ic">▦</span><span class="c13p4-ls"><span class="c13p4-l1">本品 · 不盜戒與不邪婬戒</span><span class="c13p4-l2">破壞戒相即破壞緣起 · 四層次矩陣</span></span></button></div><div class="c13p4-modal" id="c13p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c13p4-card"><button class="c13p4-close" id="c13p4Close" type="button" aria-label="關閉">×</button><h3>卷十三·第四品 不盜戒與不邪婬戒 · 全景總表</h3><p class="sub">卷十三・第四品｜四層次辯證矩陣・盜戒四支・內外命五家所共・同理怖畏觀・不邪婬十罪</p><table class="c13p4-tbl"><caption>一、四層次辯證矩陣與核心命題（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>一·世俗迷思</td><td>剖析凡夫的錯誤認知與表相執著（如「強者讚美」的顛倒見）</td></tr><tr><td>二·戒相界定</td><td>對行為邊界的嚴密重新定義（盜戒四支、邪婬人守法守）</td></tr><tr><td>三·止觀心法</td><td>轉化貪欲、建立同理與怖畏的實修觀想（觀財如命、視物如火）</td></tr><tr><td>四·中觀實相</td><td>運用緣起、性空、二諦徹底透視行為本質（五家所共、受樂者空）</td></tr><tr><td>核心命題</td><td>「<b>破壞戒相，即是破壞緣起</b>」——世俗視戒為限制自由的牢籠，中觀視戒為對法界緣起網絡的「本體論校準」；不殺不盜不婬非僅為獲福，實為順應中道之物理必然</td></tr></tbody></table><table class="c13p4-tbl"><caption>二、不盜戒·奪財即奪外命（緣起網的破壞）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>盜戒四支</td><td>知他物（認知有主）→生盜心（起佔有動機）→離本處（改變物品狀態）→物屬我（完成佔有）；四支俱足方成盜相</td></tr><tr><td>生命擴充論</td><td>命有內命（呼吸心跳肉體）與外命（飲食衣被資具）；「若奪財物，是為奪外命」——盜被提升到與殺生同序列</td></tr><tr><td>一切人中賊</td><td>殺生針對特定怨敵、偷盜者是「一切有物人中賊」——故一切諸國無不治罪（敵意的普遍性）</td></tr><tr><td>雜毒蹈火喻</td><td>劫（讚為強）與偷（卑微）美惡雖殊、雜毒不異；明暗蹈火晝夜雖異、燒足一也——俱為不善</td></tr><tr><td>雙軌止觀</td><td>同理觀（觀財如命·其主泣懊惱）＋怖畏觀（視物如火·他物不可觸譬如大火聚）——令貪手不敢伸出</td></tr><tr><td>五家所共</td><td>財富無獨立自性——名義屬「我」實為王、賊、水、火、不愛子五種無常因緣暫時寄放；何苦為五家保管而墮地獄？</td></tr></tbody></table><table class="c13p4-tbl"><caption>三、不邪婬戒與盜婬共相（戒相即中道）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>邪婬界定</td><td>人守（父母夫主等守護）、法守（出家戒法等）——種種犯相；換一條進路談身分、守護與條件</td></tr><tr><td>自有妻之辨</td><td>即使自有妻，非時、非處、非道亦成邪婬——破除「自有妻即無罪」的世俗迷思</td></tr><tr><td>不知不惱之辨</td><td>破除「不知不惱即無罪」——邪婬之過不在對方知否，而在破壞緣起網絡的守護結構</td></tr><tr><td>邪婬十罪</td><td>危身破家、心常疑懼、為人所憎、種地獄業因等——與不與取十罪同構，皆現世破敗＋果報喪失＋三世流轉</td></tr><tr><td>盜婬共相</td><td>二戒終點同歸一個中觀法網——盜破外命之緣、婬破身分守護之緣，皆是「破壞戒相即破壞緣起」；戒相即中道</td></tr></tbody></table><p class="c13p4-note">本品以「四層次辯證矩陣」重建戒律的哲學建築——每一條戒、每一段問答都可放進「世俗迷思→戒相界定→止觀心法→中觀實相」四格檢視。核心命題是<b>戒律即緣起的物理法則</b>：若萬法互為緣起、牽一髮而動全身，那麼破壞戒相即是破壞緣起本身。不盜由「奪財即奪命」收束於「斷緣即斷命」，不邪婬終歸同一法網——戒非束縛，實為對法界緣起網絡的本體論校準。</p></div></div>
+<script id="wy-c13p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c13p4Btn"),BOX=document.getElementById("c13p4Box"),MODAL=document.getElementById("c13p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c13p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C13P4:END-->
 </body></html>
