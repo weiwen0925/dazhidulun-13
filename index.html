@@ -620,4 +620,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C13P2:END-->
+<!--WY-C13P3:BEGIN-->
+<style id="wy-c13p3-css">
+.c13p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c13p3-fabbox.show{display:block;}
+.c13p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c13p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c13p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c13p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c13p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c13p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c13p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c13p3-modal.open{display:flex;}
+.c13p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c13p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c13p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c13p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c13p3-close:hover{background:#e3d5b8;}
+.c13p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c13p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c13p3-tbl th,.c13p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c13p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c13p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c13p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c13p3-tbl b{color:#8b2500;}
+.c13p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c13p3-note b{color:#8b2500;}
+@media(max-width:900px){.c13p3-fabbox{right:14px;}.c13p3-tbl{font-size:11.5px;}.c13p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c13p3-fabbox" id="c13p3Box"><button class="c13p3-btn" id="c13p3Btn" type="button" aria-label="開啟全景總表"><span class="c13p3-ic">▦</span><span class="c13p3-ls"><span class="c13p3-l1">本品 · 不殺生戒</span><span class="c13p3-l2">行為靜止≠戒律動能 · 五辯證三工具</span></span></button></div><div class="c13p3-modal" id="c13p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c13p3-card"><button class="c13p3-close" id="c13p3Close" type="button" aria-label="關閉">×</button><h3>卷十三·第三品 不殺生戒 · 全景總表</h3><p class="sub">卷十三・第三品｜五大辯證模組・歸謬緣起二諦・善無記・三界界繫無作色・無畏施・借假修真</p><table class="c13p3-tbl"><caption>一、五大辯證模組與三大中觀工具（本品主骨架）</caption><thead><tr><th>項目</th><th>內容</th></tr></thead><tbody><tr><td>本體論之辯</td><td>善與無記——「自然不殺」與「受戒不殺」本體屬性是否相同？（誓願轉化）</td></tr><tr><td>宇宙論之辯</td><td>界繫與體性——不殺戒繫欲界、色界或無漏？（對治、遠遮與無作色）</td></tr><tr><td>救贖論之辯</td><td>有漏與無漏——受戒律儀為何仍屬輪迴？回歸「現前眾生各各惜命」的護生本懷</td></tr><tr><td>價值論之辯</td><td>功利與無畏——面對「殺生得大利」的質疑，重估生命價值，標舉「無畏」為真正的大利</td></tr><tr><td>三大工具</td><td>歸謬法（推至極端顯矛盾）＋緣起性空（破法有定性）＋二諦圓融（世俗有報、勝義不戲論）——「破執—顯理—圓融」的連動系統</td></tr><tr><td>核心分野</td><td>「<b>行為靜止≠戒律動能</b>」——夜中誤殺、狂癡作瘡皆非殺罪但也非戒；真正的不殺生戒關鍵在「我從今日不復殺生」的自誓心理動能</td></tr></tbody></table><table class="c13p3-tbl"><caption>二、本體論與宇宙論之辯（善無記·三界界繫）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>殺相構成</td><td>實是眾生、知是眾生、發心欲殺、奪其命、生身業有作色——五要件俱足名殺生罪</td></tr><tr><td>自然不殺屬無記</td><td>歸謬：若不殺天然是善，睡覺發呆者亦應日夜增福常不墮惡道；現實反證未受戒者仍墮惡道，故自然不殺是「無記」（無果報）</td></tr><tr><td>法無定性</td><td>不殺行為本身無自性——空無的行為＋誓願之緣，方轉為實有的功德（緣起性空的精髓）</td></tr><tr><td>有量vs無量</td><td>受戒不殺「福常日夜生」屬無量、偶發惡心造罪屬有量；強者先牽隨無量，故誓願受戒能擋地獄</td></tr><tr><td>三界界繫</td><td>欲界繫（律儀戒·對治壓制）→色界繫（定共戒·遠遮）→無漏（道共戒·遠遮）——層層深入的清淨</td></tr><tr><td>無作色</td><td>戒體是一種看不見的「無作色」（物質性防護力），非純心理活動；中觀觀此戒體如幻，破除實有執</td></tr></tbody></table><table class="c13p3-tbl"><caption>三、價值論與極致考驗（無畏施·借假修真）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>功利質疑</td><td>面對「殺生得大利」的功利詰問，論主重估生命價值——賈客採寶喻，權衡功利與無畏</td></tr><tr><td>五大施·無畏施</td><td>持不殺戒即以「無畏」施予一切眾生——不殺戒的積極面是最廣大的布施（生命的尊重）</td></tr><tr><td>同理護生</td><td>破除名相戲論後，回歸最樸素的本懷「現前眾生各各惜命，是故佛言莫奪他命」——此即中道</td></tr><tr><td>須陀洹屠兒</td><td>聖果者寧守戒而受苦——極致考驗中「全身」與「全戒」二選一時，以無漏法財勝過老病死藪的臭身</td></tr><tr><td>借假修真</td><td>捨身護戒——以如幻之身（假）成就無漏之戒（真），最極致的價值抉擇</td></tr></tbody></table><p class="c13p3-note">不殺生戒看似樸素的行為禁制，龍樹卻推上精密的辯證舞台。全品貫穿「阿毘曇執定性、中觀破定性」的張力：阿毘曇把每一法歸入固定範疇（定善、定欲界繫、定有漏），中觀則指出<b>戒的屬性不在法體本身，而在發心與因緣的徹底性</b>。從善無記之辨到捨身護戒，一切收束於「現前眾生各各惜命」的護生本懷——這就是二諦圓融的中道。</p></div></div>
+<script id="wy-c13p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c13p3Btn"),BOX=document.getElementById("c13p3Box"),MODAL=document.getElementById("c13p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c13p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C13P3:END-->
 </body></html>
