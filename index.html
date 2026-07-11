@@ -1818,4 +1818,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH13P7:END-->
+<!--WY-BH13P8:BEGIN-->
+<style id="wy-bh13p8-css">
+.bh13p8-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh13p8-fabbox.show{display:block;}
+.bh13p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh13p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh13p8-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh13p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh13p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh13p8-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh13p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh13p8-modal.open{display:flex;}
+.bh13p8-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh13p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh13p8-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh13p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh13p8-close:hover{background:#dde2e6;}
+.bh13p8-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh13p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh13p8-tbl th,.bh13p8-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh13p8-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh13p8-tbl thead th:nth-child(1){width:32%;}.bh13p8-tbl thead th:nth-child(2){width:41%;}.bh13p8-tbl thead th:nth-child(3){width:27%;}
+.bh13p8-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh13p8-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh13p8-guan{background:#eef2f5;color:#37505f;}
+.bh13p8-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh13p8-tbl tbody tr:nth-child(even) td.bh13p8-guan{background:#e8eef2;}
+.bh13p8-tbl tbody tr:nth-child(even) td.bh13p8-qa{background:#e7ecdb;}
+.bh13p8-tbl b{color:#8b2500;}
+.bh13p8-guan b{color:#2f6b5a;}
+.bh13p8-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh13p8-note b{color:#8b2500;}
+@media(max-width:900px){.bh13p8-fabbox{right:14px;}.bh13p8-tbl{font-size:11px;}.bh13p8-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh13p8-fabbox" id="bh13p8Box"><button class="bh13p8-btn" id="bh13p8Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh13p8-ic">譯</span><span class="bh13p8-ls"><span class="bh13p8-l1">本品 · 原文·白話·中觀</span><span class="bh13p8-l2">白話翻譯表</span></span></button></div><div class="bh13p8-modal" id="bh13p8Modal" role="dialog" aria-modal="true"><div class="bh13p8-card"><button class="bh13p8-close" id="bh13p8Close" type="button" aria-label="關閉">×</button><h3>卷十三 · 第8品 白話翻譯表（蜜塗苦藥）</h3><p class="sub">大智度論卷十三·蜜塗苦藥 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh13p8-tbl"><caption>蜜塗苦藥 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh13p8-src">是五戒有五種受，名五種優婆塞：一者、一分行優婆塞，二者、少分行優婆塞，三者、多分行優婆塞，四者、滿行優婆塞，五者，斷婬優婆塞。</td><td>這五戒有五種不同的受持方式，因而稱為五種優婆塞：第一種，是只受持一戒的「一分行優婆塞」；第二種，是受持部分戒條的「少分行優婆塞」；第三種，是受持大部分戒條的「多分行優婆塞」；第四種，是完整受持五戒的「滿行優婆塞」；第五種，是受了五戒之後又進一步斷除婬欲的「斷婬優婆塞」。</td><td class="bh13p8-guan"><b>五等差別受戒·因材施教的方便善巧</b>——佛陀並未要求居士一律全受五戒，而依受戒的多寡層次分為五等，顯示戒律施設本身即是隨順眾生根機、循序漸進的方便；受戒的「量」雖有差別，但每一分受持都是真實有效的戒體，並非全有或全無的二元劃分。</td></tr><tr><td class="bh13p8-src">一分行者，於五戒中受一戒，不能受持四戒；少分行者，若受二戒、若受三戒；多分行者，受四戒；滿行者，盡持五戒；斷婬者，受五戒已，師前更作自誓言：我於自婦不復行婬。</td><td>一分行優婆塞，是在五戒之中只受持一戒，沒有辦法受持其餘四戒；少分行優婆塞，是受持兩戒或者三戒；多分行優婆塞，是受持四戒；滿行優婆塞，是完整地受持五戒；斷婬優婆塞，則是在受了五戒之後，又在戒師面前另外發誓：我對自己的妻子也不再行房事。</td><td class="bh13p8-guan"><b>斷婬優婆塞·在家戒的最高標準</b>——五等之中，斷婬優婆塞已超出五戒「不邪婬」的最低標準，進一步連夫妻間的正當房事也自誓捨離，是在家身分中最貼近出家梵行的一等，顯示戒律的層級並非僵固的規範，而是可隨發心深淺自由上進的階梯。</td></tr><tr><td class="bh13p8-src">「不殺亦不盜，亦不有邪婬，實語不飲酒，正命以淨心。若能行此者，二世憂畏除，戒福恒隨身，常與天人俱。世間六時華，榮曜色相發，以此一歲華，天上一日具。天樹自然生，花鬘及瓔珞，丹葩如燈照，眾色相間錯。天衣無央數，其色若干種，鮮白映天日，輕密無間壟；金色映繡文，斐亹如雲氣，如是上妙服，悉從天樹出。明珠天耳璫，寶𤦲曜手足，隨心所好愛，亦從天樹出。金華琉璃莖，金剛為華鬚，柔軟香芬熏，悉從寶池出。琴瑟箏箜篌，七寶為挍飾，器妙故音清，皆亦從樹出。波隸質妬樹，天上樹中王，在彼歡喜園，一切無有比。持戒為耕田，天樹從中出，天廚甘露味，飲食除飢渴。天女無監礙，亦無妊身難，嬉怡縱逸樂，食無便利患。持戒常攝心，得生自恣地，無事亦無難，常得肆樂志。諸天得自在，憂苦不復生，所欲應念至，身光照幽冥。如是種種樂，皆由施與戒，若欲得此報，當勤自勉勵！」</td><td>「不殺生也不偷盜，不有邪淫的行為，說真實語不飲酒，以清淨心奉行正命。如果能夠奉行這些，今生來世的憂愁怖畏都能消除，戒律的福報將恆常跟隨己身，常常能與天人同在一處。人間一年之中六時的花朵，展現出各種光彩色相，而人間這一年的花，在天上只需要一天就能具足。天界的樹木自然生長出花鬘與瓔珞，紅色的花朵如燈火般照耀，各種色彩交相輝映。天衣的數量無窮無盡，色彩種類繁多，鮮豔潔白映著天日，輕柔細密沒有絲毫間隙；金色映著繡紋，斑斕如雲氣蒸騰，像這樣上妙的天衣，全部都是從天樹上生出。明珠製成的天耳璫，寶珠光耀手足，隨著各人心中所喜愛的樣式，也都是從天樹上生出。金色的花、琉璃做的莖梗，金剛做成花蕊，柔軟而香氣芬芳，全部都是從寶池中生出。琴、瑟、箏、箜篌等樂器，用七寶裝飾點綴，樂器精妙所以音聲清越，也都是從樹上生出。波隸質妬樹，是天上眾樹之王，生長在歡喜園中，世間沒有任何東西能與之相比。以持戒作為耕耘的田地，天樹便從中生長出來，天界廚房中甘露的美味，飲食能消除飢渴。天女沒有拘束障礙，也沒有懷胎生產的苦難，嬉戲遊樂、放意縱情，飲食之後也沒有便溺之患。持戒能常常攝持心念，因而能生在自在隨心之地，沒有煩擾也沒有危難，常常能夠盡情享受歡樂之志。諸天能得大自在，憂愁苦惱不再生起，心中所想要的隨念即至，身上的光明能照亮幽暗冥晦之處。像這樣種種的快樂，都是由布施與持戒而來，如果想要得到這樣的果報，就應當勤奮地自我勉勵！」</td><td class="bh13p8-guan"><b>以天福讚歎持戒·善巧接引的第一階</b>——此偈全篇鋪陳持戒所感得的天界妙樂果報，色相莊嚴、樂具自然，是論主「先以欲鉤牽，後令入佛智」的具體示範：對尚未能直趣涅槃的初機眾生，先以可感可欲的天樂福報吸引其持戒之心，此屬「有相」的方便接引，尚非究竟，其究竟義要待下文「蜜塗苦藥」之喻與「三階段轉化」揭示。</td></tr><tr><td class="bh13p8-qa">問曰：今說尸羅波羅蜜，當以成佛，何以故乃讚天福？</td><td>問道：如今講說尸羅波羅蜜（持戒波羅蜜），本應以成就佛道為依歸，為什麼卻反而讚歎天界的福報呢？</td><td class="bh13p8-guan"><b>果地目標與方便讚歎的表面矛盾</b>——此問直指前面偈頌讚歎天福與「尸羅波羅蜜以成佛為究竟」之間的張力，看似論主偏離了大乘戒律應有的終極方向，實則為下文「蜜塗苦藥」的善巧方便之喻預留論辯空間。</td></tr><tr><td class="bh13p8-qa">答曰：佛言三事必得報果不虛：布施得大富，持戒生好處，修定得解脫。若單行尸羅，得生好處；若修定、智慧、慈悲和合，得三乘道。今但讚持戒現世功德，名聞、安樂後世得報，如偈所讚。譬如小兒，蜜塗苦藥，然後能服；今先讚戒福，然後人能持戒。能持戒已，立大誓願，得至佛道——是為尸羅生尸羅波羅蜜。</td><td>回答：佛說有三件事必定能得到真實不虛的果報：布施能得大富，持戒能出生於善好之處，修習禪定能得解脫。如果只是單獨奉行持戒，能出生於善好之處；如果將修定、智慧、慈悲和合並修，便能得到三乘之道。如今這裡只是讚歎持戒在今生的功德、以及能得名聲美譽，並在來世獲得安樂的果報，就如同偈頌中所讚歎的那樣。這就好比小孩子，把蜂蜜塗在苦藥上，然後他才願意服下；如今先讚歎持戒所得的福報，這樣人們才願意去持戒。等到能夠持戒之後，再進一步發起廣大的誓願，便能到達成佛之道——這就是由「持戒」出生「持戒波羅蜜」的過程。</td><td class="bh13p8-guan"><b>「蜜塗苦藥」——方便與究竟的辯證統一</b>——論主以蜜塗苦藥為喻，正面解答前問的表面矛盾：讚歎天福並非以天福為終極目標，而是使人「先能下嚥苦藥」的方便善巧；持戒本身（尸羅）與持戒波羅蜜之間，是一條由淺入深的連續轉化之路——先以現世可感的福樂令凡夫肯持戒，持戒既立，再依大誓願迴向佛道，尸羅便轉化為尸羅波羅蜜，顯示「方便」與「究竟」並非對立，而是次第相生的同一條道路。</td></tr><tr><td class="bh13p8-src">又以一切人皆著樂，世間之樂天上為最。若聞天上種種快樂，便能受行尸羅；後聞天上無常，厭患心生，能求解脫；更聞佛無量功德，若慈悲心生，依尸羅波羅蜜得至佛道。</td><td>再者，因為一切人都貪著於快樂，而世間的快樂之中，天上的快樂是最殊勝的。如果聽聞到天上種種美妙的快樂，就能因此而願意受持奉行戒律；之後再聽聞到天上的快樂也是無常的，因而生起厭離憂患之心，便能進一步追求解脫；再進一步聽聞到佛陀無量的功德，如果因此生起慈悲之心，就能依憑尸羅波羅蜜而到達成佛之道。</td><td class="bh13p8-guan"><b>三階段轉化·從貪樂到慈悲的次第遞進</b>——這段清楚鋪陳了「聞天樂而持戒→聞無常而厭患求解脫→聞佛功德而發慈悲趣佛道」三個階段，呼應前文蜜塗苦藥之喻：眾生的發心可以從最粗淺的貪樂出發，只要善巧引導不斷升進，粗顯的世間貪愛終能轉化為趣向無上佛道的慈悲與誓願，展現大乘戒律接引眾生時「不捨一機」的次第教法。</td></tr><tr><td class="bh13p8-src">以是故，雖說尸羅報無咎。</td><td>因為這個緣故，雖然講說持戒能得到天福的果報，這樣的說法也沒有過失。</td><td class="bh13p8-guan"><b>善巧方便不礙究竟——「無咎」的定案</b>——此句總結全品問答，正式為「讚天福」的說法方式定案：只要善巧方便的最終目的是引導眾生趣向佛道，即使暫時以世間福樂為誘因，也不違背尸羅波羅蜜的究竟精神，故說「無咎」。</td></tr></tbody></table><p class="bh13p8-note">卷十三第8品「蜜塗苦藥」原文·白話·中觀三欄對照，先以五種優婆塞、五戒偈鋪陳持戒所感天福之樂，繼而以「蜜塗苦藥」之喻，說明讚歎天福實為使人肯持戒的善巧方便，終以三階段轉化（聞天樂·聞無常·聞佛德）收束於「雖說尸羅報無咎」。白話忠於原意、不增不減；中觀欄標出各段所涉義理。　中觀關鍵詞：五等差別受戒的方便善巧　以天福讚歎持戒的第一階　蜜塗苦藥的方便與究竟統一　三階段轉化的次第遞進</p></div></div>
+<script id="wy-bh13p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh13p8Btn"),BOX=document.getElementById("bh13p8Box"),MODAL=document.getElementById("bh13p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c13p8Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh13p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH13P8:END-->
 </body></html>
